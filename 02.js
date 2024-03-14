@@ -49,8 +49,10 @@ language.
 
 /*
 PRIMITIVE DATA TYPES:
+(Call by value/Passed by values)
 Primitive data types are a set of basic data types in Js that can hold one value at a time and are compared on the basis of their value.
-number => 2 to the power 53
+
+number => up to '2 to the power 53'
 bigint => Greater range of numbers
 string => "" / ''
 boolean => true/false
@@ -59,10 +61,25 @@ undefined => not defined
 symbol => for uniquely identifying something
 
 NON-PRIMITIVE DATA TYPES:
+(Call by reference/Passed by references)
 They store a collection of values and are compared on the basis of their references.
-object
+
+object //data type is object
+array //data type is object
+function //data type is function
 */
 
 
 console.log(typeof null) //will be an object
 console.log(typeof undefined) //will be undefined itself
+
+let sym = Symbol("123")
+let sym2 = Symbol("123")
+console.log(sym) //Symbol("123")
+console.log(sym2) //Symbol("123")
+console.log(sym == sym2) //false
+
+let bigInt = BigInt(411873161784584413413) //This statement uses the BigInt() constructor to convert a number to a BigInt.
+let bigInt2 = 411873161784584413413n //The n suffix is used to indicate that the value is a BigInt.
+console.log(bigInt)
+console.log(bigInt2)

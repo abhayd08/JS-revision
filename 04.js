@@ -64,6 +64,14 @@ console.log(2 < 3) //Less than
 console.log(2 >= 1) //Greater than or equal to
 console.log(2 <= 1) //Less than or equal to
 
+console.log(null > 0); //false
+console.log(null == 0) //false 
+console.log(null >= 0) //true; the reason is that an equality check and comparisons (>, <, <=, >=) work differently.
+
+//Comparisons convert null to a number, treating it as 0. That's why 'null >= 0' is true and 'null > 0' is false. 
+
+//Always compare values with same data type. Comparing values with different data type can give un-predictable output.
+
 2 == 2? console.log("Yes") : console.log("No") //? is a ternary operator; an alternative of if-else statements
 
 
