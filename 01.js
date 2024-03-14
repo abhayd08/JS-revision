@@ -42,3 +42,15 @@ var var2 = "Variable2" //Can be re-declared as well as re-assigned but using var
 var3 = "Variable2" //If no keyword is used, variable is declared using var
 
 console.table([constant, var1, var2, var3])
+
+
+/*
+A variable is a container that stores a value. A variable is a name given to the memory location of the computer.
+Value (on the right hand side) can also be known as literal.
+
+RULES FOR CHOOSING VARIABLE NAMES:
+    1. Letters, digits, underscores, and a $ sign allowed.
+    2. Must begin with a $, underscore, or a letter.
+    3. Js reserved words cannot be used as a variable name.
+    4. They are case-sensitive.
+*/
