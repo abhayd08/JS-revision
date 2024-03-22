@@ -28,7 +28,8 @@ console.log(Math.abs(-10))
 console.log(Math.min(10, -10, 11))
 console.log(Math.max(10, -10, 11))
 console.log(Math.random()) //will return a random number between 0 and 1
-console.log((Math.random() * 10) + 1) //will return a random number between 1 and 10
+console.log((Math.random() * 10) + 1) /* Will return a random number between 1 and 10. If you don't add 1, the 
+random number generated will be between 0 (inclusive) and 10 (exclusive), meaning it will not include 10.*/
 
 const min = 20
 const max = 30
