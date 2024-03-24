@@ -35,3 +35,7 @@ const min = 20
 const max = 30
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min) //will return a number between the min and max number
+
+console.log(Math.ceil(3.2))
+console.log(Math.round(3.49))
+console.log(Math.floor(3.2))
